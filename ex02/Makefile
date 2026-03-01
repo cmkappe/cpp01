@@ -1,8 +1,8 @@
 NAME        = BraiiiiiiinnnzzzZ
 CXX         = c++
-CXXFLAGS    = -Wall -Wextra -Werror -O2 -std=c++98 -g #--MMD
+CXXFLAGS    = -Wall -Wextra -Werror -O2 -g #--MMD
 
-SRC         = zombie.cpp main.cpp newZombie.cpp randomChump.cpp
+SRC         = main.cpp
 OBJ         = $(SRC:.cpp=.o)
 DEPS        = $(OBJ:.o=.d)
 
