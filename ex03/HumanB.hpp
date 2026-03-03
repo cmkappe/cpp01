@@ -8,7 +8,7 @@ class HumanB
 {
 	private:
 	std::string	name;
-	Weapon*		weapon;
+	Weapon*		weapon; // set up as a pointer to allow for no weapon at construction (nullptr)
 
 	public:
 	HumanB(const std::string &name);
