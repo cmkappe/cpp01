@@ -1,4 +1,4 @@
-NAME        = BraiiiiiiinnnzzzZ
+NAME        = hiThisIsBrain
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -O2 -std=c++17 -g #-fsanitize=address
 

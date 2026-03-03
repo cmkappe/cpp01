@@ -13,16 +13,21 @@
 #include <string>
 #include <iostream>
 
-int main(){
-	std::string	str = "HI THIS IS BRAIN";
-	std::string	*stringPTR = &str;
-	std::string	&stringREF = str;
+int main()
+{
+	std::string	brain = "HI THIS IS BRAIN";
+	std::string	*stringPTR = &brain;    // pointer stores the address of brain
+	std::string	&stringREF = brain;     // reference is an alias for brain
 
-	std::cout << &str << std::endl;
-	std::cout << &stringPTR << std::endl;
-	std::cout << &stringREF << std::endl;
+	// Print memory addresses
+	std::cout << &brain << std::endl;       // address of brain
+	std::cout << stringPTR << std::endl;    // address stored in pointer
+	std::cout << &stringREF << std::endl;   // address of reference (same as brain)
 
-	std::cout << str << std::endl;
-	std::cout << *stringPTR << std::endl;
-	std::cout << stringREF << std::endl;
+	// Print values
+	std::cout << brain << std::endl;        // value of brain
+	std::cout << *stringPTR << std::endl;   // dereference pointer to get value
+	std::cout << stringREF << std::endl;    // reference acts like the original
+
+	return 0;
 }
