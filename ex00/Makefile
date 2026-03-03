@@ -1,10 +1,12 @@
 NAME        = BraiiiiiiinnnzzzZ
 CXX         = c++
-CXXFLAGS    = -Wall -Wextra -Werror -O2 -std=c++98 -g #--MMD
+CXXFLAGS    = -Wall -Wextra -Werror -O2 -std=c++17 -g #-fsanitize=address
 
-SRC         = zombie.cpp main.cpp newZombie.cpp randomChump.cpp
-OBJ         = $(SRC:.cpp=.o)
-DEPS        = $(OBJ:.o=.d)
+SRC_DIR     = .
+OBJ_DIR     = obj
+
+SRC         = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
+OBJ         = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 
 .PHONY: all clean fclean re
 
@@ -13,10 +15,14 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
--include $(DEPS)
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(DEPS)
+	rm -rf $(OBJ_DIR)
 
 fclean: clean
 	rm -f $(NAME)
