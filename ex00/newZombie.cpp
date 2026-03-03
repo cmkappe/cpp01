@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chiarakappe <chiarakappe@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ckappe <ckappe@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/09 16:48:05 by chiarakappe       #+#    #+#             */
-/*   Updated: 2025/11/09 17:24:50 by chiarakappe      ###   ########.fr       */
+/*   Created: 2025/11/09 16:48:05 by ckappe            #+#    #+#             */
+/*   Updated: 2025/11/09 17:24:50 by ckappe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

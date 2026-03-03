@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chiarakappe <chiarakappe@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ckappe <ckappe@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/09 16:48:10 by chiarakappe       #+#    #+#             */
-/*   Updated: 2025/11/09 17:47:00 by chiarakappe      ###   ########.fr       */
+/*   Created: 2025/11/09 16:48:10 by ckappe            #+#    #+#             */
+/*   Updated: 2025/11/09 17:47:00 by ckappe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

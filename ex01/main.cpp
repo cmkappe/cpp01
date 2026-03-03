@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chiarakappe <chiarakappe@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ckappe <ckappe@student.42heilbronn.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/09 17:03:59 by chiarakappe       #+#    #+#             */
-/*   Updated: 2025/11/09 18:59:49 by chiarakappe      ###   ########.fr       */
+/*   Created: 2025/11/09 17:03:59 by ckappe            #+#    #+#             */
+/*   Updated: 2025/11/09 18:59:49 by ckappe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
