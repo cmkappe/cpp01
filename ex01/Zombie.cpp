@@ -12,23 +12,23 @@
 
 #include "./Zombie.hpp"
 
-void	Zombie::setName(std::string &name){_name = name;}
+// -----------------------------------------------------
+// *** CONSTRUCTOR & DESTRUCTOR ***
+// -----------------------------------------------------
 
-Zombie::Zombie() {};
-
-Zombie::Zombie(const std::string &name) : _name(name) {}
-
-Zombie Zombie::operator=(const Zombie& other) {
-	if (this != &other) {
-		this->_name = other._name;
-	}
-	return *this;
-}
+Zombie::Zombie() {}
 
 Zombie::~Zombie(){
+	// destructor prints when instance goes out of scope or is deleted
 	std::cout << _name << " has been destroyed." << std::endl;
 }
 
+// -----------------------------------------------------
+// *** MEMBER FUNCTIONS ***
+// -----------------------------------------------------
+
+void	Zombie::setName(std::string &name){_name = name;}
+
 void	Zombie::announce( void ){
-	std::cout << _name << " : BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

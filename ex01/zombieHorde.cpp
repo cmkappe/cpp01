@@ -12,12 +12,17 @@
 
 #include "./Zombie.hpp"
 
-Zombie* zombieHorde(int N, std::string name ){
-
-	Zombie* horde = new Zombie[N];
+Zombie* zombieHorde(int n, std::string name)
+{
+	if (n <= 0)
+		return NULL;
 	
-	for (int i = 0; i < N; i++)
+	Zombie* horde = new Zombie[n]; // allocates an array of n Zombies on the heap
+	
+	for (int i = 0; i < n; i++) // give each the same name
 		horde[i].setName(name);
 
 	return horde;
-}
+}	
+
+	// -> caller must delete[] the returned pointer

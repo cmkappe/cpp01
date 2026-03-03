@@ -1,6 +1,6 @@
 NAME        = BraiiiiiiinnnzzzZ
 CXX         = c++
-CXXFLAGS    = -Wall -Wextra -Werror -O2 -g -std=c++17 #-fsanitize=address
+CXXFLAGS    = -Wall -Wextra -Werror -O2 -g -std=c++17 -fsanitize=address
 
 SRC_DIR     = .
 OBJ_DIR     = obj

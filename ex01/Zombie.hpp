@@ -11,13 +11,9 @@ class	Zombie
 
 	public:
 		Zombie();
-		Zombie(const std::string &name);
-
-		Zombie operator=(const Zombie& other);
-
 		~Zombie();
 
-	void announce( void );
+	void 	announce( void );
 	void	setName(std::string &name);
 
 };
