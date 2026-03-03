@@ -12,6 +12,9 @@
 
 #include "./Zombie.hpp"
 
+// -----------------------------------------------------
+// *** CONSTRUCTOR & DESTRUCTOR ***
+// -----------------------------------------------------
 
 Zombie::Zombie(const std::string &name) : _name(name) {}
 
@@ -19,6 +22,9 @@ Zombie::~Zombie(){
 	std::cout << _name << " has been destroyed." << std::endl;
 }
 
-void	Zombie::announce( void ){
-	std::cout << _name << " : BraiiiiiiinnnzzzZ..." << std::endl;
+// -----------------------------------------------------
+// *** MEMBER FUNCTION ***
+// -----------------------------------------------------
+void	Zombie::announce(void){
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

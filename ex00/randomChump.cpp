@@ -12,10 +12,13 @@
 
 #include "./Zombie.hpp"
 
-void randomChump( std::string name ){
-	Zombie z(name);
+void randomChump( std::string name )
+{	
+	Zombie z(name); // creates object on the stack, gonna be destroyed when the function ends
 	z.announce();
-}
+}		// <-- z is destroyed here by automatically calling destructor
+
+
 
 
 /* Then, implement the following two functions:

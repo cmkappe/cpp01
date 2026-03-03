@@ -12,11 +12,11 @@
 
 #include "./Zombie.hpp"
 
-
-Zombie* newZombie( std::string name ){
-	
+Zombie* newZombie( std::string name )
+{
+	// create object on the *heap* so it survives after function returns
 	Zombie *z = new Zombie(name);
-	return z;
+	return z;             // caller is responsible for delete
 }
 
 /* Then, implement the following two functions:

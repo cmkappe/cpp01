@@ -12,10 +12,11 @@
 
 #include "./Zombie.hpp"
 
-int main (){
-	Zombie *z = newZombie("Heap_____"); // allocated on heap
+int main ()
+{
+	Zombie *z = newZombie("Heap_____"); // allocated on heap, lives until we delete it
     z->announce();
-    delete z; // must delete manually
+    delete z; // free the heap memory (no automatic cleanup)
 
-    randomChump("___Stack"); // allocated on stack, auto-destroyed
+    randomChump("___Stack"); // returns immediately, stack object is destroyed automatically
 }
